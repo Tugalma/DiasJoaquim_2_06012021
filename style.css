@@ -1,3 +1,23 @@
+*{
+
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+section i {
+    background-color: pink;
+}
+
+.nav1 {
+    display: flex;
+   
+}
+
+
 .articlehotel img {
     width: 80px;
     height: 80px;
