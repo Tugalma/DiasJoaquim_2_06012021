@@ -1,22 +1,63 @@
-*{
+
+.Filtres span {
+    border:1px solid black;
+    border-radius:15px;
+    margin: 0 5px 0 5px;
+}
+
+.Filtres i {
+    background-color: #deebff;
+    color:#0065fc;
+}
+
+.inputReserv {
+border: 1px solid black;
+display: inline-block;
+border-radius: 15px;
+}
+
+.inputReserv i {
+    background-color: #f2f2f2;
+}
+
+.inputReserv input {
+    border:none;
+}
+
+.inputReserv button {
+    background-color: blue;
+    color:white;
+}
+
+
+header {
+
+ display:flex;
+ justify-content: space-between;
 
 }
 
-nav {
+  
+    
+footer {
+    
+    background-color: #f2f2f2;
+}
+
+footer nav {
     display:flex;
-    justify-content: space-between;
 
 }
 
-section i {
-    background-color: pink;
+footer nav div {
+    display:flex;
+    flex-direction: column;
 }
 
-.nav1 {
-    display: flex;
-   
-}
 
+.articlehotel {
+    background-color: #f2f2f2s;
+}
 
 .articlehotel img {
     width: 80px;
