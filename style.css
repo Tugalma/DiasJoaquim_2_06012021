@@ -5,6 +5,11 @@
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
+    width: 1300px;
+    margin-left:auto;
+    margin-right: auto;
+    
 }
 
 #blocpage {
@@ -17,38 +22,38 @@ header {
     width: 100%;
 }
 
+header nav a {
+    text-decoration: none;
+
+}
+
 .nav1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 
+     
 }
 
-.liensnav a {
-    padding-right: 22px;
-    padding-left: 22px;
-    text-decoration: none;
-}
-.liensnav a:nth-child(1){
-    color: blue;
-    border-top: 4px solid #0065fc;
-    padding-top: 15px;
+.bleunav:hover {
+    color: #0065FC;
+    border-top: 4px #0065FC solid;
+    padding-top: 12px;
+   
 }
 
-.liensnav a:nth-child(2) {
-    color: black;
+#boheb {
+    color: #0065FC;
+    border-top: 4px #0065FC solid;
+    padding-top: 12px;
+    
 }
 
-.liensnav a:hover {
-    border-top: 4px solid #0065fc;
-    padding-top: 15px;
-}
 
-.liensnav a:nth-child(3) {
-    padding-right: 0px;
-    color: blue;
+#inscr {
     font-weight: bold;
+    color: #0065FC;
+    
 }
 
 .Filtres span {
@@ -109,54 +114,93 @@ header {
 }
 
 .container {
-background-color: #f2f2f2;
 margin: auto;
-padding: 20px;
+padding: 0px;
 height: 50%;
 border-radius: 25px;
-border:solid black 1px;
 display: flex;
 justify-content: space-between;
-
-
+width: 100%;
+height: 600px;
 
 }
 
+.sixcartes {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .articlehotel img {
-    width: 80px;
-    height: 80px;
+
+    width: 250px;
+    height: 120px;
+    border-radius: 17px 17px 0px 0px;
+}
+
+.articlehotel article {
+    border: 1px white solid;
+    border-radius: 17px;
+    background-color: white;
+
 }
 
 .articlehotel {
     
     border-radius: 25px;
-    border:solid black 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:  #f2f2f2;
+    width: 70%;
+
+    
+    
 }
+
 
 .articlehaut {
     display: flex;
+    
 }
 
 .articlebas {
     display: flex;
 }
 
+
+
 aside img {
     width: 80px;
     height: 80px;
 }
 
+aside {
+    background-color:  #f2f2f2;
+    
+}
+
 .activitemarseille img{
     width: 80px;
     height: 80px;
+    
+    
+}
+
+.activitemarseille {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.vieuxport {
+    
 }
 
     
 footer {
-    height: 180px;
     background-color: #f2f2f2;
 }
 
