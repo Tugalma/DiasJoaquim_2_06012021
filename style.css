@@ -11,9 +11,8 @@
      padding: 0px;
  }
  
-
-
- #blocpage  {
+  #blocpage  {
+    width: 85%;
      max-width: 1300px;
      margin-left: auto;
      margin-right: auto;
@@ -83,16 +82,22 @@ overflow: hidden;
 margin-bottom: 15px; 
 }
 
-input {
-font-size: large;
-  color: black;
+.loupe {
+  color: #0065FC;;
+  background-color: #0065FC;
 }
 
-.inputReserv i {
-padding: 17px;
-padding-right: 20px;
- background-color: #f2f2f2;
+.rechercher {
+  margin-right: 18px;
 }
+
+
+.geoloc {
+  background-color: #f2f2f2;
+  padding: 17px;
+  padding-left: 21px;
+}
+
 
 .inputReserv input {
 border: none;
@@ -114,27 +119,53 @@ padding-left: 25px;
 
  /*------------------------------------ Filtre  après le Header [ section 1 ] --------------------------*/
 
-  .Filtres {
+ .containerfiltre {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+ }
+
+ .filtro {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
     font-weight: bold;
-  }
+}
+
+.filtreicon {
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.filtreicon i {
+  color: #0065FC;
+}
+
+.searchfilter {
+  margin: 0 1rem;
+}
+
+.titlefiltro {
+  margin: 0 2rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+
  
-  .Filtres span {
-   border: 1px solid #d9d9d9;
-   border-radius: 45px;
-   padding-top: 15px;
-   padding-bottom: 14px;
-   padding-right: 20px;
-   font-weight: bold;
- }
- 
-  .Filtres i {
-     background-color: #deebff;
-     color: #0065fc;
-     padding: 15px 15px 15px 15px;
-     border-radius: 50%;
-     border: 2px solid #deebff;
-     margin-right: 8px;
- }
 
 /*-------------------------------------Logo + le para après le Header [ section 1]----------------------*/
 
@@ -159,6 +190,7 @@ padding-left: 25px;
   grid-template-columns: 6fr 3fr;
   gap:25px;
   border-radius: 25px;
+  margin-bottom: 70px;;
 }
 
 .heberge {
@@ -172,6 +204,7 @@ border-radius: 1.25rem;
   gap: 25px;
   padding-left:25px;
   padding-right: 25px;
+  padding-bottom: 30px;
 }
 
 .sixcards img {
@@ -284,6 +317,11 @@ aside {
   height: 40px;
 }
 
+.spacewhite3 {
+  width: 100%;
+  height: 50px;
+}
+
 .titlearticle {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
@@ -381,7 +419,7 @@ footer {
 }
 
 .footercolumn {
-    width: 30%;
+    width: 100%;
     padding: 2rem 2rem;
 }
 
@@ -394,40 +432,12 @@ footer {
 
 /*-----------------------------------Debut Responsive----------------------*/
 
-    @media screen and (max-width: 1220px) {
-    .grid {
-      margin: auto;
-      grid-template-columns: 1fr 1fr;
-      height: 800px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .grid {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
-
-    .grid > .cartesolo,
-    .grid .sub-grid > div {
-      min-height: 200px;
-    }
-   
-    .footercontainer {
-      display:flex;
-      flex-direction: column;
-    }
-
-  }
-
-
-
 
 /*-- Responsive--*/
 @media screen and (max-width: 1200px) {
     
   body {
-       width: 85%;
+       width: 100%;
        margin: auto;
   }
    .containergrille {
@@ -456,8 +466,17 @@ footer {
    .iconetitle {
         width: 100%;
    }
+
+   .grid {
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    height: 800px;
+  }
+
    
 }
+
+
 
 @media  screen and (max-width: 850px) {
    .sectiontitle {
@@ -469,10 +488,11 @@ footer {
    }
 }
 
+
+
+
 @media screen and (max-width: 730px) {
-
-
-   .sixcards {
+       .sixcards {
         display: grid;
         grid-template-columns: 1fr 1fr;
    }
@@ -480,23 +500,39 @@ footer {
       .asidecards {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        }
+    }
    
         .asidecards article {
              width: 100%;
+    }
+
+            .iconetitle {
+             width: 100%;
         }
 
-        .iconetitle {
-             width: 100%;
+        .grid {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+    
+        .grid > .cartesolo,
+        .grid .sub-grid > div {
+          min-height: 200px;
+        }
+       
+        .footercontainer {
+          display:flex;
+          flex-direction: column;
         }
 }
 
 
-@media screen and (max-width: 600px) {
 
-   .gridheader {
-       
-   }
+
+
+@media screen and (max-width: 600px) {
+  
+
    .sixcards {
         display:grid;
         grid-template-columns: 1fr;
@@ -538,13 +574,20 @@ footer {
      margin-top:60px;
    }
 
+  .loupe {
+    display: block;
+    color: white;
+    padding-right: 5px;
+  }   
 
-   }
+  .rechercher {
+    display: none;
+  }
+
+
+  }
 
   
-
-
-
 
 
 
