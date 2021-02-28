@@ -246,7 +246,7 @@ article:hover {
 }
 
 .filtro:hover {
-  transform: scale(1.015);
+  transform: scale(1.014);
   transition: all 0.2s;
   background-color: #f3f8ff;
 }
@@ -268,6 +268,10 @@ article:hover {
 .viewmore {
   font-weight: bold;
   margin-top: 15px;
+<<<<<<< HEAD
+  text-decoration: none;
+=======
+>>>>>>> DEV
 }
 
 a {
