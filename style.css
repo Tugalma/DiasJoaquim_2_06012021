@@ -600,9 +600,7 @@ footer {
         border-bottom: 2px #f2f2f2 solid;
    }
 
-  
-
-   .headernavlink1 {
+    .headernavlink1 {
      border-top: none;
      border-bottom: 3px solid #0065FC;
    }
@@ -650,16 +648,32 @@ footer {
   }
 
   
+
+  @media  (max-width:457px) {
+    .titlefiltro {
+      margin-right : 60px;
+    }
+   }
+
+
 @media  (max-width:410px) {
 
   .containerInput {
     text-align: center;
   }
 
+
   .inputReserv input {
-    width: 75px;
+    width: 139px;
+  }
+
+  .headernavlink1 {
+    margin-left:20px;
   }
 }
+
+
+
 
 
 
