@@ -644,19 +644,25 @@ footer {
     display: none;
   }
 
+ }
 
-  }
 
+  @media  (max-width:460px) {
+    .containerInput {
+      text-align: center;
+    }
   
-
-  @media  (max-width:457px) {
-    .titlefiltro {
-      margin-right : 60px;
+   .inputReserv input {
+      width: 140px;
+    }
+  
+    .headernavlink1 {
+      margin-left:20px;
     }
    }
 
 
-@media  (max-width:410px) {
+@media  (max-width:375px) {
 
   .containerInput {
     text-align: center;
@@ -670,6 +676,11 @@ footer {
   .headernavlink1 {
     margin-left:20px;
   }
+
+  .titlefiltro {
+    margin-right: 90px;
+  }
+
 }
 
 
