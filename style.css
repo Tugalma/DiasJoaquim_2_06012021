@@ -592,10 +592,10 @@ footer {
    }
 
    .twolink {
-        width: 100%;
+        width: 106%;
         position:absolute;
         top: 50px;
-        right: 35px;
+        right: 0px;
         margin: auto;
         border-bottom: 2px #f2f2f2 solid;
    }
@@ -659,6 +659,8 @@ footer {
     .headernavlink1 {
       margin-left:20px;
     }
+
+ 
    }
 
 
@@ -677,8 +679,13 @@ footer {
     margin-left:20px;
   }
 
+  .logoinfo {
+    width: 3rem;
+  }
+
   .titlefiltro {
     margin-right: 90px;
+
   }
 
 }
